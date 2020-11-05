@@ -1,24 +1,68 @@
+<!DOCTYPE html>
 <html>
 
    <head>
     <title> Michelle A. Caler on Github </title>
    </head>
 
-   <body>
-   <div class="About Me">
-     <h1><span> About Me </span></h1>
-     <p> 
-      Hello! My name is Michelle. I am a former physics instructor who is looking to transition into data science and data analytics. <br>
-      When I am not delving into datasets, I can be found cooking, knitting, or reading. <br>
-      I am also a lapsed runner who is slowly trying to get back into the habit. 
+<!-- CSS property to place div 
+            side by side -->
+        <style>  
+            #leftbox {
+                border-style: groove; 
+                border-width: 2px;
+                border-color: #ff99ff;
+                float:left;  
+                background:#ffccff; 
+                width:33%; 
+                height:575px; 
+            }
+            #middlebox{ 
+                border-style: groove; 
+                border-width: 2px;
+                border-color: #ff99ff;
+                float:left;  
+                background:#ffccff; 
+                width:33%; 
+                height:575px; 
+            } 
+            #rightbox{
+                border-style: groove; 
+                border-width: 2px;
+                border-color: #ff99ff;
+                float:right; 
+                background:#ffccff; 
+                width:33%; 
+                height:575px; 
+            } 
+            p.padding {
+             padding-left: 6px;
+             padding-right: 6px;
+            }
+        </style>
+
+   <body bgcolor="#ffccff">
+     <header>
+     <hr color = #ff99ff />
+     <h1 style="text-align:center;"> About Me </h1>
+     </header>
+     <hr color = #ff99ff />
+     <p style="PADDING-LEFT: 325px"> 
+      Hello! My name is Michelle. I am a former physics instructor who is looking to <br>
+      transition into data science and data analytics. When I am not delving into datasets, <br>
+      I can be found cooking, knitting, or reading. I am also a lapsed runner who is <br>
+      slowly trying to get back into the habit. 
      <br>
      <br>
      This page is actively under construction. Thanks for coming by!
      </p>
-   </div>
-
-   <div class="Skills">
-   <h1><span>My Skills</span></h1>
+   <br>
+   <br>
+   <article>
+   <hr color = #ff99ff />
+   <h1 style="text-align:center;"><span>My Skills</span></h1>
+   <hr color = #ff99ff />
+   <section>
    <p>
    I am committed to learning and practicing new skills. My coding languages include:
    <br>
@@ -30,6 +74,7 @@
       <li>NumPy</li>
       <li>SciPy</li>
       <li>Matplotlib</li>
+      <li>Seaborn</i>
       <li>Scikit-Learn</li>
      </ul>
      <br>
@@ -39,13 +84,24 @@
      <br>
      <li>basic HTML</li>
    </ul>
-   In addition to these, I have very basic familiary with C++ and did a little bit of FORTRAN 90 coding about 15 or so years ago.
-   </div>
+   </section>
+   In addition to these, I have very basic familiary with C++ and did a little bit of FORTRAN 90 coding about 15 or so years ago. <br>
+   <br>
+   I have used both Ubuntu and Windows for coding and have basic familiarity with the command line. <br>
+   <br>
+   As a physics instructor, I used Microsoft Word, Microsoft Excel, and Microsoft PowerPoint regularly to create course materials and track student progress.
+   <br>
+   <br>
+   </article>
 
-   <div class="Projects">
-   <h1><span>Notable Projects on Github</span></h1>
+   <header>
+   <hr color = #ff99ff />
+   <h1 style="text-align:center;"> <span> Notable Projects on Github</span></h1>
+   </header>
+   <hr color = #ff99ff />
+   <p style="text-align:center;">
+   Check out  my Github! <a href="https://github.com/macaler">https://github.com/macaler</a> </p> 
    <p>
-   Check out  my Github! <a href="https://github.com/macaler">macaler</a> <br>
    Every time I finish a project, I try to get it up on Github as soon as possible. 
    Many of these projects are Codecademy Pro guided projects which I have completed as I work toward completing the Data Science path.
    Some are directly inspired by skills I learned through Codecademy that I wanted to get additional practice with; 
@@ -53,29 +109,35 @@
    <br>
    Feel free to browse my Github repositories to see what all I have done! But here are some highlighted projects that I think show off a variety of my current skills.
    </p>
-   <ul style="PADDING-LEFT: 12px">
+   <article id = "leftbox">
+   <p class="padding"> Data Analysis projects: </p>
+   <ul style="PADDING-LEFT: 20px">
    <li> <a href="https://github.com/macaler/games_of_chance">games_of_chance</a> </li>
-   This was a Codecademy Pro challenge project to write a few different functions that simulate games of chance. It showcases what I can do with basic Python.
-   <br>
-   <br>
+   <p class="padding">This was a Codecademy Pro challenge project to write a few different functions that simulate games of chance. It showcases what I can do with basic Python. </p>
    <li> <a href="https://github.com/macaler/musclehub_project">musclehub_project</a>  </li>
-   This was a Codecademy project designed to analyze a fictional A/B test and membership funnels. Included in this project is a PowerPoint presentation detailing my project findings as well as the project code.
-   <br>
-   <br>
+   <p class="padding"> This was a Codecademy project designed to analyze a fictional A/B test and membership funnels. Included in this project is a PowerPoint presentation detailing my project findings as well as the project code.</p>
    <li> <a href="https://github.com/macaler/biodiversity_project">biodiversity_project</a> </li>
-   This was a Codecademy project designed to practice hypothesis testing and determining the sample size needed to conduct an experiment in the context of fictional data inspired by that of U.S. National Parks. This project features a written report of my project findings as well as the project code.
-   <br>
-   <br>
+   <p class="padding">This was a Codecademy project designed to practice hypothesis testing and determining the sample size needed to conduct an experiment in the context of fictional data inspired by that of U.S. National Parks. This project features a written report of my project findings as well as the project code. </p>
    <li> <a href="https://github.com/macaler/Pokemon">Pokemon</a> </li>
-   This is an independent project I completed after downloading a dataset from Kaggle. In it, I showcase my skills with Pandas and Matplotlib, and do some hypothesis testing with SciPy.
+   <p class="padding">This is an independent project I completed after downloading a dataset from Kaggle. In it, I showcase my skills with Pandas and Matplotlib, and do some hypothesis testing with SciPy. </p>
    <br>
    <br>
    </ul>
-   In addition to these, I've undertaken a series of supervised machine learning projects based on the toy datasets in Scikit-Learn. This series of projects includes:
+   </article>
+   <article id = "middlebox">
+   <p class="padding"> Supervised Machine Learning Projects <br>
+  (based on the toy datasets in Scikit-Learn): </p>
+   <ul style="PADDING-LEFT: 25px">
    <li> <a href="https://github.com/macaler/breast_cancer_logistic_regression">breast_cancer_logistic_regression</a> </li>  
    <li> <a href="https://github.com/macaler/iris_svm_classification">iris_svm_classification</a> </li>  
    <li> <a href="https://github.com/macaler/wine_knn_classification">wine_knn_classification</a> </li>  
    <li> <a href="https://github.com/macaler/boston_housing_knnr_project">boston_housing_knnr_project</a> </li>  
    <li> <a href="https://github.com/macaler/bc_tree_forest_classification">bc_tree_forest_classification</a> </li>  
+   </ul>
+   </article>
+   <article id = "rightbox">
+   <p class="padding"> Data Analysis & Supervised Machine Learning projects: </p>
+   <p class="padding"> Two of these projects are in progress! Please check back soon.
+   </article>
 
 </html>
